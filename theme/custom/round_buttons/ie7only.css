@@ -1,0 +1,3 @@
+
+/* fix ie7 box-sizing = The URL to the HTC file must be relative to your HTML document */
+.round-button, .round-button * {*behavior:url(boxsizing.htc)}

@@ -1,0 +1,459 @@
+/* BEGIN BUTTON CSS */
+
+.round-button, .round-button * {-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box}
+
+.round-button {position: relative; font-family:'Open Sans', sans-serif, Segoe UI light;font-weight:300;font-size:20px;text-align:center;display:inline-block;cursor:pointer;
+transition:all .5s linear;
+-moz-transition:all .5s linear;
+-webkit-transition:all .5s linear;
+-o-transition:all .5s linear}
+
+.round-button a {
+position: absolute;
+width: 100%;
+height: 100%;
+top: 0;
+left: 0;
+text-decoration: none;
+z-index: 10;
+background-color: #FFF;
+opacity: 0;
+filter: alpha(opacity=1);
+}
+
+
+.round-button-inner {text-align:center;overflow:hidden;
+transition:all .9s linear;
+-moz-transition:all .9s linear;
+-webkit-transition:all .9s linear;
+-o-transition:all .9s linear}
+
+/*** size ***/
+
+.round-button.large {width:150px;height:150px;
+border-radius:75px;-webkit-border-radius:75px;-moz-border-radius:75px;-o-border-radius:75px;-khtml-border-radius:75px}
+.round-button.normal {width:110px;height:110px;
+border-radius:55px;-webkit-border-radius:55px;-moz-border-radius:55px;-o-border-radius:55px;-khtml-border-radius:55px}
+.round-button.mini {width:80px;height:80px;
+border-radius:40px;-webkit-border-radius:40px;-moz-border-radius:40px;-o-border-radius:40px;-khtml-border-radius:40px}
+
+.large .round-button-inner {margin:25px auto 0px auto;width:100px;height:100px;
+border-radius:50px;-webkit-border-radius:50px;-moz-border-radius:50px;-o-border-radius:50px;-khtml-border-radius:50px}
+.normal .round-button-inner {margin:20px auto 0px auto;width:70px;height:70px;
+border-radius:35px;-webkit-border-radius:35px;-moz-border-radius:35px;-o-border-radius:35px;-khtml-border-radius:35px}
+.mini .round-button-inner {margin:10px auto 0px auto;width:60px;height:60px;
+border-radius:30px;-webkit-border-radius:30px;-moz-border-radius:30px;-o-border-radius:30px;-khtml-border-radius:30px}
+
+.round-button-inner.ico-1 {background-image:url("icons/overview.png");background-repeat:no-repeat;background-position:center center}
+.round-button-inner.ico-2 {background-image:url("icons/news.png");background-repeat:no-repeat;background-position:center center}
+.round-button-inner.ico-3 {background-image:url("icons/discussion.png");background-repeat:no-repeat;background-position:center center}
+
+.style5 .round-button-spacer, .style6 .round-button-spacer {margin-top:-4px} /* set negative margin-top to the border-width of style5 and style6 */
+
+/*** blue ***/
+
+.round-button.style1.blue {background-color:#1787d6}
+.round-button.style1.blue .round-button-inner {background-color:#fff}
+.round-button.style1.blue:hover {background-color:#fff}
+.round-button.style1.blue:hover .round-button-inner {background-color:#1787d6}
+
+.round-button.style2.blue {background-color:#fff}
+.round-button.style2.blue .round-button-inner {background-color:#1787d6}
+.round-button.style2.blue:hover {background-color:#fff}
+.round-button.style2.blue:hover .round-button-inner {background-color:#4ca412}
+
+.round-button.style3.blue {background-color:#1787d6}
+.round-button.style3.blue .round-button-inner {border:4px solid #fff}
+.round-button.style3.blue:hover {background-color:#fff}
+.round-button.style3.blue:hover .round-button-inner {border:4px solid #1787d6}
+
+.round-button.style4.blue {background-color:#fff}
+.round-button.style4.blue .round-button-inner {border:4px solid #1787d6}
+.round-button.style4.blue:hover {background-color:#1787d6}
+.round-button.style4.blue:hover .round-button-inner {border:4px solid #fff}
+
+.round-button.style5.blue {background-color:#1787d6;border:4px solid #84bbe4}
+.round-button.style5.blue .round-button-inner {background-color:#fff}
+.round-button.style5.blue:hover {background-color:#fff;border:4px solid #84bbe4}
+.round-button.style5.blue:hover .round-button-inner {background-color:#1787d6}
+
+.round-button.style6.blue {background-color:#fff;border:4px solid #84bbe4}
+.round-button.style6.blue .round-button-inner {background-color:#1787d6}
+.round-button.style6.blue:hover {background-color:#1787d6;border:4px solid #84bbe4}
+.round-button.style6.blue:hover .round-button-inner {background-color:#fff}
+
+/*** grey ***/
+
+.round-button.style1.grey {background-color:#9c9c9c}
+.round-button.style1.grey .round-button-inner {background-color:#fff}
+.round-button.style1.grey:hover {background-color:#fff}
+.round-button.style1.grey:hover .round-button-inner {background-color:#9c9c9c}
+
+.round-button.style2.grey {background-color:#fff}
+.round-button.style2.grey .round-button-inner {background-color:#9c9c9c}
+.round-button.style2.grey:hover {background-color:#fff}
+.round-button.style2.grey:hover .round-button-inner {background-color:#4ca412}
+
+.round-button.style3.grey {background-color:#9c9c9c}
+.round-button.style3.grey .round-button-inner {border:4px solid #fff}
+.round-button.style3.grey:hover {background-color:#fff}
+.round-button.style3.grey:hover .round-button-inner {border:4px solid #9c9c9c}
+
+.round-button.style4.grey {background-color:#fff}
+.round-button.style4.grey .round-button-inner {border:4px solid #9c9c9c}
+.round-button.style4.grey:hover {background-color:#9c9c9c}
+.round-button.style4.grey:hover .round-button-inner {border:4px solid #fff}
+
+.round-button.style5.grey {background-color:#9c9c9c;border:4px solid #c2c2c2}
+.round-button.style5.grey .round-button-inner {background-color:#fff}
+.round-button.style5.grey:hover {background-color:#fff;border:4px solid #c2c2c2}
+.round-button.style5.grey:hover .round-button-inner {background-color:#9c9c9c}
+
+.round-button.style6.grey {background-color:#fff;border:4px solid #c2c2c2}
+.round-button.style6.grey .round-button-inner {background-color:#9c9c9c}
+.round-button.style6.grey:hover {background-color:#9c9c9c;border:4px solid #c2c2c2}
+.round-button.style6.grey:hover .round-button-inner {background-color:#fff}
+
+/*** green ***/
+
+.round-button.style1.green {background-color:#70ad10}
+.round-button.style1.green .round-button-inner {background-color:#fff}
+.round-button.style1.green:hover {background-color:#fff}
+.round-button.style1.green:hover .round-button-inner {background-color:#70ad10}
+
+.round-button.style2.green {background-color:#fff}
+.round-button.style2.green .round-button-inner {background-color:#70ad10}
+.round-button.style2.green:hover {background-color:#fff}
+.round-button.style2.green:hover .round-button-inner {background-color:#ccab0f}
+
+.round-button.style3.green {background-color:#70ad10}
+.round-button.style3.green .round-button-inner {border:4px solid #fff}
+.round-button.style3.green:hover {background-color:#fff}
+.round-button.style3.green:hover .round-button-inner {border:4px solid #70ad10}
+
+.round-button.style4.green {background-color:#fff}
+.round-button.style4.green .round-button-inner {border:4px solid #70ad10}
+.round-button.style4.green:hover {background-color:#70ad10}
+.round-button.style4.green:hover .round-button-inner {border:4px solid #fff}
+
+.round-button.style5.green {background-color:#70ad10;border:4px solid #9ec660}
+.round-button.style5.green .round-button-inner {background-color:#fff}
+.round-button.style5.green:hover {background-color:#fff;border:4px solid #9ec660}
+.round-button.style5.green:hover .round-button-inner {background-color:#70ad10}
+
+.round-button.style6.green {background-color:#fff;border:4px solid #9ec660}
+.round-button.style6.green .round-button-inner {background-color:#70ad10}
+.round-button.style6.green:hover {background-color:#70ad10;border:4px solid #9ec660}
+.round-button.style6.green:hover .round-button-inner {background-color:#fff}
+
+/*** yellow ***/
+
+.round-button.style1.yellow {background-color:#d8b806}
+.round-button.style1.yellow .round-button-inner {background-color:#fff}
+.round-button.style1.yellow:hover {background-color:#fff}
+.round-button.style1.yellow:hover .round-button-inner {background-color:#d8b806}
+
+.round-button.style2.yellow {background-color:#fff}
+.round-button.style2.yellow .round-button-inner {background-color:#d8b806}
+.round-button.style2.yellow:hover {background-color:#fff}
+.round-button.style2.yellow:hover .round-button-inner {background-color:#43a6da}
+
+.round-button.style3.yellow {background-color:#d8b806}
+.round-button.style3.yellow .round-button-inner {border:4px solid #fff}
+.round-button.style3.yellow:hover {background-color:#fff}
+.round-button.style3.yellow:hover .round-button-inner {border:4px solid #d8b806}
+
+.round-button.style4.yellow {background-color:#fff}
+.round-button.style4.yellow .round-button-inner {border:4px solid #d8b806}
+.round-button.style4.yellow:hover {background-color:#d8b806}
+.round-button.style4.yellow:hover .round-button-inner {border:4px solid #fff}
+
+.round-button.style5.yellow {background-color:#d8b806;border:4px solid #e8d464}
+.round-button.style5.yellow .round-button-inner {background-color:#fff}
+.round-button.style5.yellow:hover {background-color:#fff;border:4px solid #e8d464}
+.round-button.style5.yellow:hover .round-button-inner {background-color:#d8b806}
+
+.round-button.style6.yellow {background-color:#fff;border:4px solid #e8d464}
+.round-button.style6.yellow .round-button-inner {background-color:#d8b806}
+.round-button.style6.yellow:hover {background-color:#d8b806;border:4px solid #e8d464}
+.round-button.style6.yellow:hover .round-button-inner {background-color:#fff}
+
+/*** orange ***/
+
+.round-button.style1.orange {background-color:#e28f23}
+.round-button.style1.orange .round-button-inner {background-color:#fff}
+.round-button.style1.orange:hover {background-color:#fff}
+.round-button.style1.orange:hover .round-button-inner {background-color:#e28f23}
+
+.round-button.style2.orange {background-color:#fff}
+.round-button.style2.orange .round-button-inner {background-color:#e28f23}
+.round-button.style2.orange:hover {background-color:#fff}
+.round-button.style2.orange:hover .round-button-inner {background-color:#43a6da}
+
+.round-button.style3.orange {background-color:#e28f23}
+.round-button.style3.orange .round-button-inner {border:4px solid #fff}
+.round-button.style3.orange:hover {background-color:#fff}
+.round-button.style3.orange:hover .round-button-inner {border:4px solid #e28f23}
+
+.round-button.style4.orange {background-color:#fff}
+.round-button.style4.orange .round-button-inner {border:4px solid #e28f23}
+.round-button.style4.orange:hover {background-color:#e28f23}
+.round-button.style4.orange:hover .round-button-inner {border:4px solid #fff}
+
+.round-button.style5.orange {background-color:#e28f23;border:4px solid #e5b77c}
+.round-button.style5.orange .round-button-inner {background-color:#fff}
+.round-button.style5.orange:hover {background-color:#fff;border:4px solid #e5b77c}
+.round-button.style5.orange:hover .round-button-inner {background-color:#e28f23}
+
+.round-button.style6.orange {background-color:#fff;border:4px solid #e5b77c}
+.round-button.style6.orange .round-button-inner {background-color:#e28f23}
+.round-button.style6.orange:hover {background-color:#e28f23;border:4px solid #e5b77c}
+.round-button.style6.orange:hover .round-button-inner {background-color:#fff}
+
+/*** red ***/
+
+.round-button.style1.red {background-color:#c81b1b}
+.round-button.style1.red .round-button-inner {background-color:#fff}
+.round-button.style1.red:hover {background-color:#fff}
+.round-button.style1.red:hover .round-button-inner {background-color:#c81b1b}
+
+.round-button.style2.red {background-color:#fff}
+.round-button.style2.red .round-button-inner {background-color:#c81b1b}
+.round-button.style2.red:hover {background-color:#fff}
+.round-button.style2.red:hover .round-button-inner {background-color:#43a6da}
+
+.round-button.style3.red {background-color:#c81b1b}
+.round-button.style3.red .round-button-inner {border:4px solid #fff}
+.round-button.style3.red:hover {background-color:#fff}
+.round-button.style3.red:hover .round-button-inner {border:4px solid #c81b1b}
+
+.round-button.style4.red {background-color:#fff}
+.round-button.style4.red .round-button-inner {border:4px solid #c81b1b}
+.round-button.style4.red:hover {background-color:#c81b1b}
+.round-button.style4.red:hover .round-button-inner {border:4px solid #fff}
+
+.round-button.style5.red {background-color:#c81b1b;border:4px solid #eca6a6}
+.round-button.style5.red .round-button-inner {background-color:#fff}
+.round-button.style5.red:hover {background-color:#fff;border:4px solid #eca6a6}
+.round-button.style5.red:hover .round-button-inner {background-color:#c81b1b}
+
+.round-button.style6.red {background-color:#fff;border:4px solid #eca6a6}
+.round-button.style6.red .round-button-inner {background-color:#c81b1b}
+.round-button.style6.red:hover {background-color:#c81b1b;border:4px solid #eca6a6}
+.round-button.style6.red:hover .round-button-inner {background-color:#fff}
+
+/*** purple ***/
+
+.round-button.style1.purple {background-color:#9816e3}
+.round-button.style1.purple .round-button-inner {background-color:#fff}
+.round-button.style1.purple:hover {background-color:#fff}
+.round-button.style1.purple:hover .round-button-inner {background-color:#9816e3}
+
+.round-button.style2.purple {background-color:#fff}
+.round-button.style2.purple .round-button-inner {background-color:#9816e3}
+.round-button.style2.purple:hover {background-color:#fff}
+.round-button.style2.purple:hover .round-button-inner {background-color:#43a6da}
+
+.round-button.style3.purple {background-color:#9816e3}
+.round-button.style3.purple .round-button-inner {border:4px solid #fff}
+.round-button.style3.purple:hover {background-color:#fff}
+.round-button.style3.purple:hover .round-button-inner {border:4px solid #9816e3}
+
+.round-button.style4.purple {background-color:#fff}
+.round-button.style4.purple .round-button-inner {border:4px solid #9816e3}
+.round-button.style4.purple:hover {background-color:#9816e3}
+.round-button.style4.purple:hover .round-button-inner {border:4px solid #fff}
+
+.round-button.style5.purple {background-color:#9816e3;border:4px solid #cfa5e8}
+.round-button.style5.purple .round-button-inner {background-color:#fff}
+.round-button.style5.purple:hover {background-color:#fff;border:4px solid #cfa5e8}
+.round-button.style5.purple:hover .round-button-inner {background-color:#9816e3}
+
+.round-button.style6.purple {background-color:#fff;border:4px solid #cfa5e8}
+.round-button.style6.purple .round-button-inner {background-color:#9816e3}
+.round-button.style6.purple:hover {background-color:#9816e3;border:4px solid #cfa5e8}
+.round-button.style6.purple:hover .round-button-inner {background-color:#fff}
+
+/*** pink ***/
+
+.round-button.style1.pink {background-color:#e117da}
+.round-button.style1.pink .round-button-inner {background-color:#fff}
+.round-button.style1.pink:hover {background-color:#fff}
+.round-button.style1.pink:hover .round-button-inner {background-color:#e117da}
+
+.round-button.style2.pink {background-color:#fff}
+.round-button.style2.pink .round-button-inner {background-color:#e117da}
+.round-button.style2.pink:hover {background-color:#fff}
+.round-button.style2.pink:hover .round-button-inner {background-color:#43a6da}
+
+.round-button.style3.pink {background-color:#e117da}
+.round-button.style3.pink .round-button-inner {border:4px solid #fff}
+.round-button.style3.pink:hover {background-color:#fff}
+.round-button.style3.pink:hover .round-button-inner {border:4px solid #e117da}
+
+.round-button.style4.pink {background-color:#fff}
+.round-button.style4.pink .round-button-inner {border:4px solid #e117da}
+.round-button.style4.pink:hover {background-color:#e117da}
+.round-button.style4.pink:hover .round-button-inner {border:4px solid #fff}
+
+.round-button.style5.pink {background-color:#e117da;border:4px solid #eaa7e8}
+.round-button.style5.pink .round-button-inner {background-color:#fff}
+.round-button.style5.pink:hover {background-color:#fff;border:4px solid #eaa7e8}
+.round-button.style5.pink:hover .round-button-inner {background-color:#e117da}
+
+.round-button.style6.pink {background-color:#fff;border:4px solid #eaa7e8}
+.round-button.style6.pink .round-button-inner {background-color:#e117da}
+.round-button.style6.pink:hover {background-color:#e117da;border:4px solid #eaa7e8}
+.round-button.style6.pink:hover .round-button-inner {background-color:#fff}
+
+
+
+/* effect1 */
+
+.round-button.effect1 {
+box-shadow:0px 2px 2px rgba(0, 0, 0, 0.3);
+-moz-box-shadow:0px 2px 2px rgba(0, 0, 0, 0.3);
+-webkit-box-shadow:0px 2px 2px rgba(0, 0, 0, 0.3)}
+
+/* effect2 */
+
+.round-button.style2.effect2, .round-button.style3.effect2, .round-button.style6.effect2 {
+box-shadow:0px 2px 2px rgba(0, 0, 0, 0.3), inset 0px 40px 50px rgba(0, 0, 0, 0.2);
+-moz-box-shadow:0px 2px 2px rgba(0, 0, 0, 0.3), inset 0px 40px 50px rgba(0, 0, 0, 0.2);
+-webkit-box-shadow:0px 2px 2px rgba(0, 0, 0, 0.3), inset 0px 40px 50px rgba(0, 0, 0, 0.2)}
+.round-button.style2.effect2 .round-button-inner, .round-button.style3.effect2 .round-button-inner, .round-button.style6.effect2 .round-button-inner {
+box-shadow:inset 0px 2px 2px rgba(0, 0, 0, 0.3), inset 0px 2px 10px rgba(0, 0, 0, 0.3);
+-moz-box-shadow:inset 0px 2px 2px rgba(0, 0, 0, 0.3), inset 0px 2px 10px rgba(0, 0, 0, 0.3);
+-webkit-box-shadow:inset 0px 2px 2px rgba(0, 0, 0, 0.3), inset 0px 2px 10px rgba(0, 0, 0, 0.3)}
+
+/****/
+
+.round-button.style1.effect2, .round-button.style4.effect2, .round-button.style5.effect2 {
+box-shadow:0px 2px 2px rgba(0, 0, 0, 0.3), inset 0px 40px 50px rgba(0, 0, 0, 0.2);
+-moz-box-shadow:0px 2px 2px rgba(0, 0, 0, 0.3), inset 0px 40px 50px rgba(0, 0, 0, 0.2);
+-webkit-box-shadow:0px 2px 2px rgba(0, 0, 0, 0.3), inset 0px 40px 50px rgba(0, 0, 0, 0.2)}
+.round-button.style1.effect2 .round-button-inner, .round-button.style4.effect2 .round-button-inner, .round-button.style5.effect2 .round-button-inner {
+box-shadow:inset 0px 2px 2px rgba(0, 0, 0, 0.3), inset 0px 2px 10px rgba(0, 0, 0, 0.3);
+-moz-box-shadow:inset 0px 2px 2px rgba(0, 0, 0, 0.3), inset 0px 2px 10px rgba(0, 0, 0, 0.3);
+-webkit-box-shadow:inset 0px 2px 2px rgba(0, 0, 0, 0.3), inset 0px 2px 10px rgba(0, 0, 0, 0.3)}
+
+
+/* effect3 */
+
+.round-button.style2.effect3, .round-button.style3.effect3, .round-button.style6.effect3 {
+box-shadow:0px 2px 2px rgba(0, 0, 0, 0.3), inset 0px 40px 50px rgba(0, 0, 0, 0.1);
+-moz-box-shadow:0px 2px 2px rgba(0, 0, 0, 0.3), inset 0px 40px 50px rgba(0, 0, 0, 0.1);
+-webkit-box-shadow:0px 2px 2px rgba(0, 0, 0, 0.3), inset 0px 40px 50px rgba(0, 0, 0, 0.1)}
+.round-button.style2.effect3:hover, .round-button.style3.effect3:hover, .round-button.style6.effect3:hover {
+box-shadow:0px 2px 2px rgba(0, 0, 0, 0.3), inset 0px -40px 50px rgba(0, 0, 0, 0.1);
+-moz-box-shadow:0px 2px 2px rgba(0, 0, 0, 0.3), inset 0px -40px 50px rgba(0, 0, 0, 0.1);
+-webkit-box-shadow:0px 2px 2px rgba(0, 0, 0, 0.3), inset 0px -40px 50px rgba(0, 0, 0, 0.1)}
+
+.round-button.style2.effect3 .round-button-inner, .round-button.style3.effect3 .round-button-inner, .round-button.style6.effect3 .round-button-inner {
+box-shadow:inset 0px 2px 2px rgba(0, 0, 0, 0.3), inset 0px 2px 30px rgba(255, 255, 255, 0.9), inset 0px 20px 15px rgba(255, 255, 255, 0.3), inset 30px -20px 10px rgba(255, 255, 255, 0.2);
+-moz-box-shadow:inset 0px 2px 2px rgba(0, 0, 0, 0.3), inset 0px 2px 30px rgba(255, 255, 255, 0.9), inset 0px 20px 15px rgba(255, 255, 255, 0.3), inset 30px -20px 10px rgba(255, 255, 255, 0.2);
+-webkit-box-shadow:inset 0px 2px 2px rgba(0, 0, 0, 0.3), inset 0px 2px 30px rgba(255, 255, 255, 0.9), inset 0px 20px 15px rgba(255, 255, 255, 0.3), inset 30px -20px 10px rgba(255, 255, 255, 0.2)}
+.round-button.style2.effect3:hover .round-button-inner, .round-button.style3.effect3:hover .round-button-inner, .round-button.style6.effect3:hover .round-button-inner {
+box-shadow:inset 0px 2px 2px rgba(0, 0, 0, 0.3), inset 0px 2px 30px rgba(255, 255, 255, 0.9), inset 20px 0px 15px rgba(255, 255, 255, 0.3), inset -30px 20px 10px rgba(255, 255, 255, 0.2);
+-moz-box-shadow:inset 0px 2px 2px rgba(0, 0, 0, 0.3), inset 0px 2px 30px rgba(255, 255, 255, 0.9), inset 20px 0px 15px rgba(255, 255, 255, 0.3), inset -30px 20px 10px rgba(255, 255, 255, 0.2);
+-webkit-box-shadow:inset 0px 2px 2px rgba(0, 0, 0, 0.3), inset 0px 2px 30px rgba(255, 255, 255, 0.9), inset 20px 0px 15px rgba(255, 255, 255, 0.3), inset -30px 20px 10px rgba(255, 255, 255, 0.2)}
+
+/****/
+
+.round-button.style1.effect3, .round-button.style4.effect3, .round-button.style5.effect3 {
+box-shadow:0px 2px 2px rgba(0, 0, 0, 0.3), inset 0px 40px 50px rgba(255, 255, 255, 0.4);
+-moz-box-shadow:0px 2px 2px rgba(0, 0, 0, 0.3), inset 0px 40px 50px rgba(0, 0, 0, 0.1);
+-webkit-box-shadow:0px 2px 2px rgba(0, 0, 0, 0.3), inset 0px 40px 50px rgba(0, 0, 0, 0.1)}
+.round-button.style1.effect3 .round-button-inner, .round-button.style4.effect3 .round-button-inner, .round-button.style5.effect3 .round-button-inner {
+box-shadow:0px 2px 2px rgba(0, 0, 0, 0.3), inset 0px -40px 50px rgba(0, 0, 0, 0.1);
+-moz-box-shadow:0px 2px 2px rgba(0, 0, 0, 0.3), inset 0px -40px 50px rgba(0, 0, 0, 0.1);
+-webkit-box-shadow:0px 2px 2px rgba(0, 0, 0, 0.3), inset 0px -40px 50px rgba(0, 0, 0, 0.1)}
+
+.round-button.style1.effect3 .round-button-inner, .round-button.style4.effect3 .round-button-inner, .round-button.style5.effect3 .round-button-inner {
+box-shadow:inset 0px 2px 30px rgba(0, 0, 0, 0.1), inset 0px 20px 15px rgba(0, 0, 0, 0.1), inset 30px -20px 10px rgba(0, 0, 0, 0.1);
+-moz-box-shadow:inset 0px 2px 30px rgba(0, 0, 0, 0.1), inset 0px 20px 15px rgba(0, 0, 0, 0.1), inset 30px -20px 10px rgba(0, 0, 0, 0.1);
+-webkit-box-shadow:inset 0px 2px 30px rgba(0, 0, 0, 0.1), inset 0px 20px 15px rgba(0, 0, 0, 0.1), inset 30px -20px 10px rgba(0, 0, 0, 0.1)}
+.round-button.style1.effect3:hover .round-button-inner, .round-button.style4.effect3:hover .round-button-inner, .round-button.style5.effect3:hover .round-button-inner {
+box-shadow:inset 0px 2px 2px rgba(0, 0, 0, 0.3), inset 0px 2px 30px rgba(255, 255, 255, 0.9), inset 20px 0px 15px rgba(255, 255, 255, 0.3), inset -30px 20px 10px rgba(255, 255, 255, 0.2);
+-moz-box-shadow:inset 0px 2px 2px rgba(0, 0, 0, 0.3), inset 0px 2px 30px rgba(255, 255, 255, 0.9), inset 20px 0px 15px rgba(255, 255, 255, 0.3), inset -30px 20px 10px rgba(255, 255, 255, 0.2);
+-webkit-box-shadow:inset 0px 2px 2px rgba(0, 0, 0, 0.3), inset 0px 2px 30px rgba(255, 255, 255, 0.9), inset 20px 0px 15px rgba(255, 255, 255, 0.3), inset -30px 20px 10px rgba(255, 255, 255, 0.2)}
+
+/* effect4 */
+
+.round-button.style2.effect4, .round-button.style3.effect4, .round-button.style6.effect4 {
+box-shadow:0px 2px 2px rgba(0, 0, 0, 0.3), inset 0px 2px 30px rgba(0, 0, 0, 0.1), inset 0px -10px 10px rgba(0, 0, 0, 0.1);
+-moz-box-shadow:0px 2px 2px rgba(0, 0, 0, 0.3), inset 0px 2px 30px rgba(0, 0, 0, 0.1), inset 0px -10px 10px rgba(0, 0, 0, 0.1);
+-webkit-box-shadow:0px 2px 2px rgba(0, 0, 0, 0.3), inset 0px 2px 30px rgba(0, 0, 0, 0.1), inset 0px -10px 10px rgba(0, 0, 0, 0.1)}
+.round-button.style2.effect4:hover, .round-button.style3.effect4:hover, .round-button.style6.effect4:hover {
+box-shadow:inset 0px 2px 2px rgba(0, 0, 0, 0.3), inset 0px 2px 30px rgba(0, 0, 0, 0.1), inset 0px 10px 10px rgba(0, 0, 0, 0.1);
+-moz-box-shadow:inset 0px 2px 2px rgba(0, 0, 0, 0.3), inset 0px 2px 30px rgba(0, 0, 0, 0.1), inset 0px 10px 10px rgba(0, 0, 0, 0.1);
+-webkit-box-shadow:inset 0px 2px 2px rgba(0, 0, 0, 0.3), inset 0px 2px 30px rgba(0, 0, 0, 0.1), inset 0px 10px 10px rgba(0, 0, 0, 0.1)}
+
+.round-button.style2.effect4 .round-button-inner, .round-button.style3.effect4 .round-button-inner, .round-button.style6.effect4 .round-button-inner {
+box-shadow:inset -10px -20px 40px rgba(255, 255, 255, 0.6), inset 0px -4px 0px rgba(255, 255, 255, 0.2), 0px 0px 10px rgba(0, 0, 0, 0.3), inset 0px 2px 0px rgba(255, 255, 255, 0.4);
+-moz-box-shadow:inset -10px -20px 40px rgba(255, 255, 255, 0.6), inset 0px -4px 0px rgba(255, 255, 255, 0.2), 0px 0px 10px rgba(0, 0, 0, 0.3), inset 0px 2px 0px rgba(255, 255, 255, 0.4);
+-webkit-box-shadow:inset -10px -20px 40px rgba(255, 255, 255, 0.6), inset 0px -4px 0px rgba(255, 255, 255, 0.2), 0px 0px 10px rgba(0, 0, 0, 0.3), inset 0px 2px 0px rgba(255, 255, 255, 0.4)}
+.round-button.style2.effect4:hover .round-button-inner, .round-button.style3.effect4:hover .round-button-inner, .round-button.style6.effect4:hover .round-button-inner {
+box-shadow:inset -10px -20px 40px rgba(255, 255, 255, 0.6), inset 0px -102px 0px rgba(255, 255, 255, 0.2), 0px 0px 10px rgba(0, 0, 0, 0.3), inset 0px -2px 0px rgba(255, 255, 255, 0.4);
+-moz-box-shadow:inset -10px -20px 40px rgba(255, 255, 255, 0.6), inset 0px -102px 0px rgba(255, 255, 255, 0.2), 0px 0px 10px rgba(0, 0, 0, 0.3), inset 0px -2px 0px rgba(255, 255, 255, 0.4);
+-webkit-box-shadow:inset -10px -20px 40px rgba(255, 255, 255, 0.6), inset 0px -102px 0px rgba(255, 255, 255, 0.2), 0px 0px 10px rgba(0, 0, 0, 0.3), inset 0px -2px 0px rgba(255, 255, 255, 0.4)}
+
+/****/
+
+.round-button.style1.effect4, .round-button.style4.effect4, .round-button.style5.effect4 {
+box-shadow:0px 2px 2px rgba(0, 0, 0, 0.3), inset 0px 2px 30px rgba(0, 0, 0, 0.2), inset 0px 0px 10px rgba(0, 0, 0, 0.3);
+-moz-box-shadow:0px 2px 2px rgba(0, 0, 0, 0.3), inset 0px 2px 30px rgba(0, 0, 0, 0.2), inset 0px 0px 10px rgba(0, 0, 0, 0.3);
+-webkit-box-shadow:0px 2px 2px rgba(0, 0, 0, 0.3), inset 0px 2px 30px rgba(0, 0, 0, 0.2), inset 0px 0px 10px rgba(0, 0, 0, 0.3)}
+.round-button.style1.effect4:hover, .round-button.style4.effect4:hover, .round-button.style5.effect4:hover {
+box-shadow:inset 0px 0px 5px rgba(0, 0, 0, 0.3);
+-moz-box-shadow:inset 0px 0px 5px rgba(0, 0, 0, 0.3);
+-webkit-box-shadow:inset 0px 0px 5px rgba(0, 0, 0, 0.3)}
+
+.round-button.style1.effect4 .round-button-inner, .round-button.style4.effect4 .round-button-inner, .round-button.style5.effect4 .round-button-inner {
+box-shadow:inset -10px -20px 40px rgba(0, 0, 0, 0.2), inset 0px -4px 0px rgba(255, 255, 255, 0.9), 0px 0px 10px rgba(0, 0, 0, 0.3), inset 0px 2px 0px rgba(255, 255, 255, 0.9);
+-moz-box-shadow:inset -10px -20px 40px rgba(0, 0, 0, 0.2), inset 0px -4px 0px rgba(255, 255, 255, 0.9), 0px 0px 10px rgba(0, 0, 0, 0.3), inset 0px 2px 0px rgba(255, 255, 255, 0.9);
+-webkit-box-shadow:inset -10px -20px 40px rgba(0, 0, 0, 0.2), inset 0px -4px 0px rgba(255, 255, 255, 0.9), 0px 0px 10px rgba(0, 0, 0, 0.3), inset 0px 2px 0px rgba(255, 255, 255, 0.9)}
+.round-button.style1.effect4:hover .round-button-inner, .round-button.style4.effect4:hover .round-button-inner, .round-button.style5.effect4:hover .round-button-inner {
+box-shadow:inset -10px -20px 40px rgba(0, 0, 0, 0.2), inset 0px -102px 0px rgba(255, 255, 255, 0.3);
+-moz-box-shadow:inset -10px -20px 40px rgba(0, 0, 0, 0.2), inset 0px -102px 0px rgba(255, 255, 255, 0.3);
+-webkit-box-shadow:inset -10px -20px 40px rgba(0, 0, 0, 0.2), inset 0px -102px 0px rgba(255, 255, 255, 0.3)}
+
+/* effect5 */
+
+.round-button.style2.effect5, .round-button.style3.effect5, .round-button.style6.effect5 {
+box-shadow:inset 0px -100px 20px rgba(0, 0, 0, 0.1), inset 0px 100px 20px rgba(0, 0, 0, 0.1);
+-moz-box-shadow:inset 0px -100px 20px rgba(0, 0, 0, 0.1), inset 0px 100px 20px rgba(0, 0, 0, 0.1);
+-webkit-box-shadow:inset 0px -100px 20px rgba(0, 0, 0, 0.1), inset 0px 100px 20px rgba(0, 0, 0, 0.1)}
+.round-button.style2.effect5:hover, .round-button.style3.effect5:hover, .round-button.style6.effect5:hover {
+box-shadow:inset 0px 100px 20px rgba(0, 0, 0, 0.1), inset 0px -100px 20px rgba(0, 0, 0, 0.1);
+-moz-box-shadow:inset 0px 100px 20px rgba(0, 0, 0, 0.1), inset 0px -100px 20px rgba(0, 0, 0, 0.1);
+-webkit-box-shadow:inset 0px 100px 20px rgba(0, 0, 0, 0.1), inset 0px -100px 20px rgba(0, 0, 0, 0.1)}
+
+.round-button.style2.effect5 .round-button-inner, .round-button.style3.effect5 .round-button-inner, .round-button.style6.effect5 .round-button-inner {
+box-shadow:inset 0px 2px 0px rgba(0, 0, 0, 0.3), inset 0px 25px 20px rgba(255, 255, 255, 0.43), 0px -1px 0px rgba(255, 255, 255, 0.5);
+-moz-box-shadow:inset 0px 2px 0px rgba(0, 0, 0, 0.3), inset 0px 25px 20px rgba(255, 255, 255, 0.43), 0px -1px 0px rgba(255, 255, 255, 0.5);
+-webkit-box-shadow:inset 0px 2px 0px rgba(0, 0, 0, 0.3), inset 0px 25px 20px rgba(255, 255, 255, 0.43), 0px -1px 0px rgba(255, 255, 255, 0.5)}
+.round-button.style2.effect5:hover .round-button-inner, .round-button.style3.effect5:hover .round-button-inner, .round-button.style6.effect5:hover .round-button-inner {
+box-shadow:inset 0px -2px 0px rgba(0, 0, 0, 0.3), inset 0px -25px 20px rgba(255, 255, 255, 0.43), 0px 1px 0px rgba(255, 255, 255, 0.5);
+-moz-box-shadow:inset 0px -2px 0px rgba(0, 0, 0, 0.3), inset 0px -25px 20px rgba(255, 255, 255, 0.43), 0px 1px 0px rgba(255, 255, 255, 0.5);
+-webkit-box-shadow:inset 0px -2px 0px rgba(0, 0, 0, 0.3), inset 0px -25px 20px rgba(255, 255, 255, 0.43), 0px 1px 0px rgba(255, 255, 255, 0.5)}
+
+/****/
+
+.round-button.style1.effect5, .round-button.style4.effect5, .round-button.style5.effect5 {
+box-shadow:inset 0px 2px 1px rgba(0, 0, 0, 0.2), inset 0px -1px 1px rgba(0, 0, 0, 0.4), inset 0px -100px 20px rgba(255, 255, 255, 0.3), inset 0px 100px 20px rgba(255, 255, 255, 0.3);
+-moz-box-shadow:inset 0px 2px 1px rgba(0, 0, 0, 0.4), inset 0px -1px 1px rgba(0, 0, 0, 0.4), inset 0px -100px 20px rgba(255, 255, 255, 0.3), inset 0px 100px 20px rgba(255, 255, 255, 0.3);
+-webkit-box-shadow:inset 0px 2px 1px rgba(0, 0, 0, 0.4), inset 0px -1px 1px rgba(0, 0, 0, 0.4), inset 0px -100px 20px rgba(255, 255, 255, 0.3), inset 0px 100px 20px rgba(255, 255, 255, 0.3)}
+.round-button.style1.effect5:hover, .round-button.style4.effect5:hover, .round-button.style5.effect5:hover {
+box-shadow: inset 0px -2px 1px rgba(0, 0, 0, 0.4), inset 0px 1px 1px rgba(0, 0, 0, 0.4), inset 0px 100px 20px rgba(255, 255, 255, 0.3), inset 0px -100px 20px rgba(255, 255, 255, 0.3);
+-moz-box-shadow:inset 0px -2px 1px rgba(0, 0, 0, 0.4), inset 0px 1px 1px rgba(0, 0, 0, 0.4), inset 0px 100px 20px rgba(255, 255, 255, 0.3), inset 0px -100px 20px rgba(255, 255, 255, 0.3);
+-webkit-box-shadow:inset 0px -2px 1px rgba(0, 0, 0, 0.4), inset 0px 1px 1px rgba(0, 0, 0, 0.4), inset 0px 100px 20px rgba(255, 255, 255, 0.3), inset 0px -100px 20px rgba(255, 255, 255, 0.3)}
+
+.round-button.style1.effect5 .round-button-inner, .round-button.style4.effect5 .round-button-inner, .round-button.style5.effect5 .round-button-inner {
+box-shadow:inset 0px 25px 20px rgba(0, 0, 0, 0.13);
+-moz-box-shadow:inset 0px 25px 20px rgba(0, 0, 0, 0.13);
+-webkit-box-shadow:inset 0px 25px 20px rgba(0, 0, 0, 0.13)}
+.round-button.style1.effect5:hover .round-button-inner, .round-button.style4.effect5:hover .round-button-inner, .round-button.style5.effect5:hover .round-button-inner {
+box-shadow:inset 0px -25px 20px rgba(0, 0, 0, 0.13);
+-moz-box-shadow:inset 0px -25px 20px rgba(0, 0, 0, 0.13);
+-webkit-box-shadow:inset 0px -25px 20px rgba(0, 0, 0, 0.13)}
